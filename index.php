@@ -29,6 +29,7 @@ $subs =		preg_replace_callback("|(.*)-->(.*)|",
 			$seconds = floor($date1/1000);
 			$seconds = ($seconds<10) ? "0$seconds" : $seconds;
 			$millis = $date1-$seconds*1000;
+
 			if ($millis>99) { $millis = "$millis"; }
 			if ($millis>9 && $millis<100) { $millis = "0$millis"; }
 			if ($millis<10) { $millis = "00$millis"; }
