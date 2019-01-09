@@ -61,11 +61,7 @@ $subs =		preg_replace_callback("|[\r]?[0-9]+[\n]|",
 		},
 		$subs);
 
-//$subs = preg_replace("/[\n][\r][\n]/", "\r", $subs);
-
 print_r($subs);
-
-exit;
 
 ?>
 </pre>
